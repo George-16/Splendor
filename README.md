@@ -85,7 +85,7 @@ $ python splendor_runner.py
 
 To change Red or Citrine agents, use -r and -c respectively, along with the agent path:
 ```bash
-$ python3 splendor_runner.py -r agents.<your_teamname>.MyTeam -c agents.anotherTeam
+$ python3 splendor_runner.py -r agents.GreatSplendor.MyTeam -c agents.anotherTeam
 ```
 
 If the game renders at a resolution that doesn't fit your screen, try using the argument --half-scale. The game runs in windowed mode by default, but can be toggled to fullscreen with F11.
@@ -100,7 +100,7 @@ $ python3 splendor_runner.py --interactive
 
 You can play the game to get insights, or challenge your agent by using the following command:
 ```bash
- python3 splendor_runner.py -r agents.<your_teamname>.myTeam --interactive
+ python3 splendor_runner.py -r agents.GreatSplendor.myTeam --interactive
 ```
 
 
