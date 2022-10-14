@@ -75,7 +75,32 @@ In order to reduce the uncertainties, a significant amount of learning processes
 
 
 # Envrioment Setup
+> :warning: **Make sure the version of Python used is >= 3.6, and that you have installed func-timeout (e.g. ```pip install func-timeout```)**
 
+By default, you can run a game against two random agents with the following:
 
+```bash
+$ python splendor_runner.py
+```
+
+To change Red or Citrine agents, use -r and -c respectively, along with the agent path:
+```bash
+$ python3 splendor_runner.py -r agents.<your_teamname>.MyTeam -c agents.anotherTeam
+```
+
+If the game renders at a resolution that doesn't fit your screen, try using the argument --half-scale. The game runs in windowed mode by default, but can be toggled to fullscreen with F11.
+### Activity Log
+Once the game ended, if you click on an action at the **activity Log Window**, it will visualise the game state after the execution of the action. 
+
+### Human vs Agent
+To enter interactive mode, use the argument --interactive. In the game, the Citrine agent will be titled "Human", and you will be able to select actions each turn.
+```bash
+$ python3 splendor_runner.py --interactive
+```
+
+You can play the game to get insights, or challenge your agent by using the following command:
+```bash
+ python3 splendor_runner.py -r agents.<your_teamname>.myTeam --interactive
+```
 
 
