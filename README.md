@@ -6,15 +6,6 @@
 
 # Greedy Best First Search - Computational Approach
 
-# Table of Contents
-- [Governing Strategy Tree](#governing-strategy-tree)
-  * [Motivation](#motivation)
-  * [Application](#application)
-  * [Trade-offs](#trade-offs)     
-     - [Advantages](#advantages)
-     - [Disadvantages](#disadvantages)
-  * [Future improvements](#future-improvements)
-
 ## Governing Strategy Tree  
 
 ### Motivation  
@@ -45,19 +36,8 @@ In the following, at the Select-Action function, we constructed a priority queue
 ### Future improvements  
 In the future, it is appreciated that we can make a better strategy to consider more about the collection of gems that benefits the agent and weaken the opponent. What's more, reserving a particular card which is important to the opponent.
 
-[Back to top](#table-of-contents)
-
 
 # Reinforcement Learning with Approximate Q-Learning - Computational Approach
-
-# Table of Contents
-- [Governing Strategy Tree](#governing-strategy-tree)
-  * [Motivation](#motivation)
-  * [Application](#application)
-  * [Trade-offs](#trade-offs)     
-     - [Advantages](#advantages)
-     - [Disadvantages](#disadvantages)
-  * [Future improvements](#future-improvements)
 
 ## Governing Strategy Tree  
 
@@ -92,5 +72,3 @@ With the predefined learning rate and discount factor, we then employ the approx
 
 ### Future improvements  
 In order to reduce the uncertainties, a significant amount of learning processes is required in training. Moreover, minimizing the features might be a good choice to accurate the weights. Furthermore, deep reinforcement learning is an upgrading approach to strengthen the performance of reinforcement learning.
-
-[Back to top](#table-of-contents)
