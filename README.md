@@ -4,7 +4,7 @@
     <img src="img/splendor.jpg" alt="logo project 2" width="505">
  </p>
 
-# Greedy Best First Search - Computational Approach
+# Greedy Best First Search
 
 ## Governing Strategy Tree  
 
@@ -37,7 +37,7 @@ In the following, at the Select-Action function, we constructed a priority queue
 In the future, it is appreciated that we can make a better strategy to consider more about the collection of gems that benefits the agent and weaken the opponent. What's more, reserving a particular card which is important to the opponent.
 
 
-# Reinforcement Learning with Approximate Q-Learning - Computational Approach
+# Reinforcement Learning with Approximate Q-Learning
 
 ## Governing Strategy Tree  
 
@@ -72,3 +72,10 @@ With the predefined learning rate and discount factor, we then employ the approx
 
 ### Future improvements  
 In order to reduce the uncertainties, a significant amount of learning processes is required in training. Moreover, minimizing the features might be a good choice to accurate the weights. Furthermore, deep reinforcement learning is an upgrading approach to strengthen the performance of reinforcement learning.
+
+
+# Envrioment Setup
+
+
+
+
