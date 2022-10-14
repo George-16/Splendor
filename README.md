@@ -46,3 +46,51 @@ In the following, at the Select-Action function, we constructed a priority queue
 In the future, it is appreciated that we can make a better strategy to consider more about the collection of gems that benefits the agent and weaken the opponent. What's more, reserving a particular card which is important to the opponent.
 
 [Back to top](#table-of-contents)
+
+
+# Reinforcement Learning with Approximate Q-Learning - Computational Approach
+
+# Table of Contents
+- [Governing Strategy Tree](#governing-strategy-tree)
+  * [Motivation](#motivation)
+  * [Application](#application)
+  * [Trade-offs](#trade-offs)     
+     - [Advantages](#advantages)
+     - [Disadvantages](#disadvantages)
+  * [Future improvements](#future-improvements)
+
+## Governing Strategy Tree  
+
+### Motivation  
+Approximate Q-learning is a type of model-free reinforcement learning method that can interact with the game environment base on the states, which upgrades the transition by the following: Learning rate * (reward + discount factor * (current value - previous value)). This formula guarantees an optimal policy by repeating game episodes. In this game, there are various combinations of board states and actions which provides a resourceful environment and Q-learning can potentially accumulate experience from it. This would help the agent to make rational decisions to proceed to the goal.
+
+
+### Application  
+#### Feature selection-
+In this approach, we calculate feature values for each action: collect, reserve and buy regarding different cases.
+
+Collect: Find distances from agent and opponent to card and reserve card, and scale them into a ratio of distance after obtaining the gem against the distance; a penalty applied of picking fewer gems or return gems.
+
+Reserve: Find the specific card resource and check whether the agent needs it; yellow gems requirements; check whether opponent could buy that card; check whether the resources in noble's cost; a penalty of returning gems or none yellow gems.
+
+Buy: Score reward; gem costs; yellow gem costs; check noble in this action or not; check the demand of that card(which means the resource of that card is essential to other cards and reserve cards or not); check the opponent's demands with that card; compare that cards' resource with respect to noble's cost; consider the price-to-price ratio; the penalty of a number of resources exceed 4.
+
+#### Training phase-
+With the predefined learning rate and discount factor, we then employ the approximate Q-function to continuously update the feature and weight values by running the game over and over again until it can achieve a relatively high winning rate. 
+
+
+### Trade-offs  
+#### *Advantages*  
+* Interact with the game environment
+* Possible to construct global optimal
+* Simplicity of implementation by policy and feature selections
+
+#### *Disadvantages*
+* Take too long to train
+* Might overestimate reward
+* High space complexity with expansion nodes
+
+### Future improvements  
+In order to reduce the uncertainties, a significant amount of learning processes is required in training. Moreover, minimizing the features might be a good choice to accurate the weights. Furthermore, deep reinforcement learning is an upgrading approach to strengthen the performance of reinforcement learning.
+
+[Back to top](#table-of-contents)
